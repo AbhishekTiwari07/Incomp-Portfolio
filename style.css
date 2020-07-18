@@ -1,0 +1,91 @@
+
+.f{
+    font-size: 175%;
+}
+
+img{
+    width:100%;
+}
+.intro-bg{
+    background:url("https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+    background-size:cover;
+    min-height: 300px;
+    position: relative;
+    color:#fff;
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    text-shadow: 0 0 2px #fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+li a{
+    color:#ffffff;
+}
+li a:hover{
+    color:aquamarine;
+}
+
+.intro-bg::before{
+    position: absolute;
+    content:"";
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.social a{
+    color:#fff;
+    font-size: 25px;
+    padding:10px;
+    transition: 0.5s;
+}
+
+.social a:hover{
+    color:aqua;
+}
+
+.intro-about-pic {
+    text-align:center;
+    padding:15px;
+}
+
+.intro-about-pic img{
+    display:block;
+    width:200px;
+    margin: 25px auto;
+    border-radius: 100%;
+    box-shadow: 0 0 15px black;
+}
+
+.intro-about-pic figcaption{
+    font-family: 'montserrat';
+    font-size:150%;
+    font-weight:300;
+}
+
+.intro-about-text{
+    padding:25px;
+}
+
+.intro-about-text h2{
+    font-family:'montserrat';
+    text-shadow: 0 0 1px #110101;
+}
+
+.intro-about-text p{
+    line-height:2;
+}
+
+@media(max-width: 575px){
+    .intro-about-pic figcaption{
+        display:none;
+    }
+}
